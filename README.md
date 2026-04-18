@@ -5,6 +5,13 @@
 
 JAVASCRIPT INTERACTIVITY &amp; DYNAMIC CONTENT
 
+---
+
+## Live Demo
+
+**Deployed URL:** https://st-itm-2026-1.github.io/hoa02-Junseop1228/
+
+---
 
 ## Objective
 
@@ -32,7 +39,7 @@ Extend your static portfolio (from Assignment 1) by integrating interactive and 
 
 ### 3. GitHub Profile and Repositories Page
 
-- Create a new page (e.g., labeled “GitHub Stats” or “My GitHub”) that displays your public GitHub profile information and a list of your public repositories.
+- Create a new page (e.g., labeled "GitHub Stats" or "My GitHub") that displays your public GitHub profile information and a list of your public repositories.
 - Add this page to your navigation bar.
 
 #### Public Profile Data
@@ -76,7 +83,7 @@ Extend your static portfolio (from Assignment 1) by integrating interactive and 
    - Project filtering  
    - GitHub Profile & Repositories page  
 5. Use branches as needed for organizing different features and maintain a good commit history.  
-6. Deploy your final project on GitHub Pages and update your repository’s README with the deployed URL.  
+6. Deploy your final project on GitHub Pages and update your repository's README with the deployed URL.  
 
 ---
 
