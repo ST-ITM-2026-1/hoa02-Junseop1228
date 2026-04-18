@@ -1,0 +1,350 @@
+/* ===== RESET & BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    font-size: 16px;
+    color: #222222;
+    background-color: #fafafa;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #555555;
+}
+
+/* ===== LAYOUT WRAPPER ===== */
+.nav-container,
+main,
+footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+main {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* ===== HEADER & NAV ===== */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    padding: 1.2rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #111111;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-link {
+    color: #888888;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.2rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-link:hover {
+    color: #111111;
+}
+
+.nav-link.active {
+    color: #111111;
+    border-bottom: 2px solid #111111;
+}
+
+/* ===== HOME ===== */
+.hero {
+    padding: 5rem 2rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f4ff 100%);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #111111;
+    letter-spacing: -0.04em;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #888888;
+    margin-top: 0.8rem;
+    font-weight: 400;
+}
+
+.about {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about h2 {
+    font-size: 1.5rem;
+    color: #111111;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #111111;
+    display: inline-block;
+    margin-bottom: 1.2rem;
+}
+
+/* ===== SECTION TITLE ===== */
+.projects h2,
+.skills h2,
+.contact h2 {
+    font-size: 1.5rem;
+    color: #111111;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #111111;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/* ===== PROJECTS ===== */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    flex: 1 1 250px;
+    border: 1px solid #eeeeee;
+    border-left: 4px solid #111111;
+    border-radius: 8px;
+    padding: 1.8rem;
+    background-color: #ffffff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #111111;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #777777;
+    margin-bottom: 0;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.skill-category {
+    flex: 1 1 200px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-top: 4px solid #111111;
+    border-radius: 8px;
+    padding: 1.8rem;
+}
+
+.skill-category h3 {
+    color: #111111;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skill-category li {
+    margin-bottom: 0.5rem;
+    color: #555555;
+    font-size: 0.95rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.skill-category li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: #bbbbbb;
+}
+
+/* ===== CONTACT ===== */
+.contact-form {
+    max-width: 560px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #ffffff;
+    color: #222222;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #111111;
+}
+
+button[type="submit"] {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem 2.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    letter-spacing: 0.02em;
+}
+
+button[type="submit"]:hover {
+    background-color: #333333;
+    transform: translateY(-1px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #eeeeee;
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    margin-top: 3rem;
+    background-color: #fafafa;
+}
+
+/* ===== RESPONSIVE — TABLET (481px ~ 768px) ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .project-card,
+    .skill-category {
+        flex: 1 1 45%;
+    }
+}
+
+/* ===== RESPONSIVE — MOBILE (0px ~ 480px) ===== */
+@media (max-width: 480px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .project-grid,
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .project-card,
+    .skill-category {
+        flex: 1 1 100%;
+    }
+
+    .contact-form {
+        padding: 0;
+    }
+}
