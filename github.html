@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Portfolio</title>
+    <title>GitHub | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -17,11 +17,11 @@
             <span class="logo">My Portfolio</span>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
                     <li><a href="projects.html" class="nav-link">Projects</a></li>
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="github.html" class="nav-link">GitHub</a></li>
+                    <li><a href="github.html" class="nav-link active">GitHub</a></li>
                     <li><button class="theme-toggle" id="theme-toggle">🌙 Dark</button></li>
                 </ul>
             </nav>
@@ -29,18 +29,22 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Hey I'm Junseop Kim</h1>
-            <p class="hero-subtitle">ITM Student at Seoul National University of Science and Technology</p>
-        </section>
+        <section class="github-section">
+            <h2>GitHub Stats</h2>
 
-        <section class="about">
-            <h2>About Me</h2>
-            <p>
-                I am a student in the major of Information Technology Management
-                at Seoul National University of Science and Technology.
-                I am interested in Claude and semiconductor manufacturing.
-            </p>
+            <!-- Profile card — filled by JS -->
+            <div id="profile-container">
+                <p class="loading-text">Loading profile...</p>
+            </div>
+
+            <!-- Repo cards — filled by JS -->
+            <div class="github-repos-header">
+                <h3>Public Repositories</h3>
+            </div>
+            <div id="repos-container" class="repos-grid">
+                <p class="loading-text">Loading repositories...</p>
+            </div>
+
         </section>
     </main>
 
@@ -49,6 +53,7 @@
     </footer>
 
     <script src="js/theme.js"></script>
+    <script src="js/github.js"></script>
 </body>
 
 </html>
