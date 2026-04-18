@@ -30,21 +30,33 @@
     <main>
         <section class="projects">
             <h2>Projects</h2>
+
+            <!-- Filter buttons — each button has data-filter matching card's data-category -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="engineering">Engineering</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+
             <div class="project-grid">
 
-                <article class="project-card">
+                <article class="project-card" data-category="web">
                     <h3>Web Portfolio</h3>
                     <p>Personal website made with HTML and CSS.</p>
+                    <span class="category-tag">Web</span>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-category="engineering">
                     <h3>Semiconductor Study</h3>
                     <p>Study about semiconductor manufacturing process.</p>
+                    <span class="category-tag">Engineering</span>
                 </article>
 
-                <article class="project-card">
+                <article class="project-card" data-category="ai">
                     <h3>Claude Study</h3>
                     <p>Claude will surely change how we live!</p>
+                    <span class="category-tag">AI</span>
                 </article>
 
             </div>
@@ -56,6 +68,7 @@
     </footer>
 
     <script src="js/theme.js"></script>
+    <script src="js/filter.js"></script>
 </body>
 
 </html>
